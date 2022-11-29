@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Epicode - Il blog dei developers</title>
+        <style>
+            * {
+                margin: 0;
+            }
+
+            main,
+            header {
+                margin-left: 15px;
+            }
+
+            table,
+            th,
+            td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                min-width: 150px;
+                background-color: blueviolet;
+                color: white;
+                text-align: center;
+            }
+
+            th {
+                color: black;
+                background-color: coral;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav {
+                background-size: cover;
+                background-image: url(./assets/img/Header.jpg);
+                height: 3.2vh;
+            }
+
+            #form-section {
+                background: linear-gradient(135deg, rgb(0, 225, 255), rgb(170, 0, 255));
+            }
+
+            footer {
+                background: linear-gradient(90deg, rgb(16, 16, 86), rgb(0, 0, 0));
+
+                color: white;
+                padding: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="./assets/img/logo.svg" alt="logo" />
+            <h1>Epicode - Il blog dei developers</h1>
+        </header>
+        <nav>
+            <button type="button">Home</button>
+            <button type="button">Articoli</button>
+            <button type="button">Job</button>
+        </nav>
+        <main>
+            <article>
+                <h2>Come creare un template per i post</h2>
+                <h3>di Mario Rossi - pubblicato il 25-10-2020</h3>
+                <p>
+                    La prima cosa da fare è suddividere in blocchi la pagina, identificando le parti comuni da applicare
+                    a tutte le pagine <br /><br />
+                </p>
+                <ul>
+                    <caption>
+                        Le varie aree saranno quindi suddivise in:
+                    </caption>
+                    <li>Contenuti di intestazione dei tag &lt;header&gt;</li>
+                    <li>Contenuti centrali variabili del tag &lt;main&gt; (corpo principale)</li>
+                    <li>Contenuti di fine pagina comuni, da inserire nel tag &lt;footer&gt;</li>
+                    <li>Formattazione del codice</li>
+                </ul>
+                <ul>
+                    <caption>
+                        Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare
+                        con i CSS. Perciò i passi saranno:
+                    </caption>
+                    <li>Progettare il markup assegnando ad ogni specifico testo il tag appropriato</li>
+                    <li>Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso il basso</li>
+                    <li>Applicare gli stili CSS</li>
+                    <li>
+                        L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè
+                        totale.
+                    </li>
+                </ul>
+                <table>
+                    <caption>
+                        Diffusione dei CSS
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>Anno</th>
+                            <th>% di utilizzo</th>
+                            <th>Supporto browsers</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2000</td>
+                            <td>20%</td>
+                            <td>17%</td>
+                        </tr>
+                        <tr>
+                            <td>2002</td>
+                            <td>35%</td>
+                            <td>22%</td>
+                        </tr>
+                        <tr>
+                            <td>2004</td>
+                            <td>45%</td>
+                            <td>42%</td>
+                        </tr>
+                        <tr>
+                            <td>2008</td>
+                            <td>80%</td>
+                            <td>51%</td>
+                        </tr>
+                        <tr>
+                            <td>2012</td>
+                            <td>100%</td>
+                            <td>76%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <br />
+            <section id="link-section">
+                <p>
+                    Un test di validazione potrà essere fatto tramite il tool online
+                    <a href="https://www.youtube.com/watch?v=PkInbdaPm3U">@</a> dedicato allo scopo. Una volta
+                    ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere stati dei veri developers come
+                    loro:
+                </p>
+                <br>
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/8MryZ4OK3KE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </section>
+            <br />
+            <section id="form-section">
+                <p>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</p>
+                <form>
+                    <fieldset>
+                        <input type="mail" name="mail" placeholder="inserisci l'email" />
+                        <button type="submit">Iscriviti!</button>
+                    </fieldset>
+                </form>
+                <br>
+            </section>
+            <section id="correlated-section">
+                Articoli correlati <br />
+                Validare il codice HTML <br />
+                Categoria: develop <br />
+                Data: 18-9-2020 <br />
+                <hr />
+                Correggere la sintassi <br />
+                Categoria: develop <br />
+                Data: 16-9-2020 <br />
+                <hr />
+                Meno Kb nella pagina Categoria: ottimizzazione Data: 30-9-2020
+            </section>
+        </main>
+        <br />
+        <footer>
+            Blog Epicode 2021
+            <br /><br />
+            Testata online di Mario Rossi, registrata con prot. n.324/2018 - via Luigi Einaudi 2 - Milano.P.IVA
+            00112233. <br />
+            <a href="mailto:info@epicode.school">info@epicode.school</a>
+        </footer>
+    </body>
+</html>
